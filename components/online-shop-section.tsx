@@ -61,7 +61,7 @@ export function OnlineShopSection() {
               </div>
 
               <div className="p-10">
-                <h3 className="font-serif text-3xl text-foreground mb-4 font-bold">{product.name}</h3>
+                <h3 className="font-serif text-3xl text-zinc-800 mb-4 font-bold">{product.name}</h3>
                 <div className="flex items-baseline gap-4 mb-2">
                   <p className="text-metallic text-3xl font-black">{product.price}</p>
                   <p className="text-lg text-black/50 line-through italic">{product.originalPrice}</p>

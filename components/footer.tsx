@@ -35,9 +35,9 @@ export function Footer() {
                 href="https://page.line.me/815ndzxp"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-metallic px-6 py-2.5 text-base rounded-sm shadow-xl"
+                className="btn-metallic px-6 py-2.5 text-base rounded-full shadow-xl"
               >
-                LINE 官方帳號
+                官方Line
               </Link>
             </div>
           </div>
