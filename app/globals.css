@@ -23,7 +23,7 @@
   
   --accent: #d4b87a;
   --border: #d4cdc1;
-  --radius: 1rem; /* 全局圓角增加至 16px，更溫潤 */
+  --radius: 2.5rem; /* 提升至 40px，達到 iPhone 般的極致圓潤感 */
 }
 
 .dark {

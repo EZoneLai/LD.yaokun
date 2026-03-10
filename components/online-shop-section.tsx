@@ -51,7 +51,7 @@ export function OnlineShopSection() {
           {products.map((product, index) => (
             <article
               key={index}
-              className="group bg-white rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
+              className="group bg-white rounded-[40px] border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
             >
               <div className="aspect-[16/10] relative overflow-hidden bg-muted/10">
                 <div className="absolute top-4 left-4 z-20">
