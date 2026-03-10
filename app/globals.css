@@ -2,7 +2,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* 曜寬.居 品牌色系 - 100% 對標 v0yaov5 */
+/* 曜寬.居 品牌色系 - 100% 對標 v0yaov5 - 溫潤升級版 */
 :root {
   --background: #f8f5f0;
   --foreground: #231e16;
@@ -12,7 +12,7 @@
   --primary-dark: #9a7d38;
   --primary-light: #dcc88a;
   
-  --secondary: #2a231a;     /* 關鍵修正：由 #1a1612 改回 v0yaov5 的深炭褐 */
+  --secondary: #2a231a;
   --secondary-foreground: #e8e2d6;
   
   --card: #f5f0e8;
@@ -23,16 +23,16 @@
   
   --accent: #d4b87a;
   --border: #d4cdc1;
-  --radius: 0.125rem;
+  --radius: 1rem; /* 全局圓角增加至 16px，更溫潤 */
 }
 
 .dark {
   --background: #1a1612;
   --foreground: #e8e2d6;
-  --primary: #d1ad55;
+  --primary: #e5c87a; /* 加亮主金色 */
   --primary-foreground: #1a1612;
-  --primary-dark: #b89542;
-  --primary-light: #e5c87a;
+  --primary-dark: #d4b87a;
+  --primary-light: #f5e6c4; /* 超亮金色高光 */
   --secondary: #2a231a;
   --secondary-foreground: #e8e2d6;
   --card: #252019;
@@ -63,8 +63,10 @@
   --color-accent: var(--accent);
   --color-border: var(--border);
   
-  --radius-sm: 0.125rem;
-  --radius-zen: 2px;
+  --radius-sm: 0.5rem;
+  --radius-md: 1rem;
+  --radius-lg: 1.5rem;
+  --radius-zen: 1rem;
 
   --animate-logo-breath: logo-breath 4s ease-in-out infinite;
 }
@@ -85,15 +87,15 @@
 @layer utilities {
   /* 修正：純淨琥珀橘發光，紅濃明亮對標 v0yaov5 */
   .bg-tea-amber {
-    background-color: #0f0d0a !important; /* 深化底色以增強發光對比 */
+    background-color: #0f0d0a !important; 
     background-image: 
       radial-gradient(circle at 50% 40%, rgba(180, 50, 20, 0.45) 0%, rgba(196, 130, 40, 0.2) 45%, rgba(15, 13, 10, 0) 85%),
       linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%) !important;
   }
 
-  /* 金屬文字 - v0yaov5 精確漸層 */
+  /* 金屬文字 - v0yaov5 精確漸層 - 加亮版 */
   .text-metallic {
-    background: linear-gradient(135deg, #9a7d38 0%, #dcc88a 50%, #9a7d38 100%);
+    background: linear-gradient(135deg, #b89542 0%, #f0e2b6 50%, #b89542 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -101,22 +103,23 @@
   }
 
   .on-dark .text-metallic {
-    background: linear-gradient(135deg, #b89542 0%, #e5c87a 50%, #b89542 100%);
+    background: linear-gradient(135deg, #d4b87a 0%, #ffffff 50%, #d4b87a 100%); /* 中心直接使用白色，營造極致光澤 */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
-  /* 金屬按鈕 */
+  /* 金屬按鈕 - 圓潤升級 */
   .btn-metallic {
-    background: linear-gradient(180deg, #dcc88a 0%, #c4a35a 50%, #9a7d38 100%);
+    background: linear-gradient(180deg, #f0e2b6 0%, #e5c87a 50%, #d4b87a 100%);
     color: #1a1612 !important;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    @apply transition-all duration-300 font-black px-12 py-4 rounded-sm shadow-xl;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    @apply transition-all duration-300 font-black px-12 py-4 rounded-full shadow-xl;
   }
   .btn-metallic:hover {
     filter: brightness(1.1);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.3);
   }
 
   .on-dark {

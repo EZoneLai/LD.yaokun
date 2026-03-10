@@ -37,7 +37,7 @@ export function GallerySection() {
           {images.map((img, i) => (
             <div
               key={i}
-              className={`relative rounded-sm overflow-hidden border border-primary/10 group ${img.span} shadow-2xl`}
+              className={`relative rounded-2xl overflow-hidden border border-primary/10 group ${img.span} shadow-2xl`}
             >
               <Image
                 src={img.src}

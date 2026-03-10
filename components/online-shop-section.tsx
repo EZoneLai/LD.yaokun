@@ -51,7 +51,7 @@ export function OnlineShopSection() {
           {products.map((product, index) => (
             <article
               key={index}
-              className="group bg-white rounded-sm border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
+              className="group bg-white rounded-2xl border border-border overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500"
             >
               <div className="aspect-[16/10] relative overflow-hidden bg-muted/10">
                 <div className="absolute top-4 left-4 z-20">
@@ -76,7 +76,7 @@ export function OnlineShopSection() {
                     </div>
                   ))}
                 </div>
-                <Link href={product.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full gap-2 btn-metallic text-primary-foreground py-4 text-lg font-black tracking-widest rounded-sm shadow-xl">
+                <Link href={product.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center w-full gap-2 btn-metallic text-primary-foreground py-4 text-lg font-black tracking-widest rounded-full shadow-xl">
                   前往商城購買
                   <ExternalLink size={20} />
                 </Link>
