@@ -1,0 +1,141 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+/* 曜寬.居 品牌色系 - 100% 對標 v0yaov5 */
+:root {
+  --background: #f8f5f0;
+  --foreground: #231e16;
+  
+  --primary: #c4a35a;
+  --primary-foreground: #1a1612;
+  --primary-dark: #9a7d38;
+  --primary-light: #dcc88a;
+  
+  --secondary: #2a231a;     /* 關鍵修正：由 #1a1612 改回 v0yaov5 的深炭褐 */
+  --secondary-foreground: #e8e2d6;
+  
+  --card: #f5f0e8;
+  --card-foreground: #2a231a;
+  
+  --muted: #ede8df;
+  --muted-foreground: #5c5043;
+  
+  --accent: #d4b87a;
+  --border: #d4cdc1;
+  --radius: 0.125rem;
+}
+
+.dark {
+  --background: #1a1612;
+  --foreground: #e8e2d6;
+  --primary: #d1ad55;
+  --primary-foreground: #1a1612;
+  --primary-dark: #b89542;
+  --primary-light: #e5c87a;
+  --secondary: #2a231a;
+  --secondary-foreground: #e8e2d6;
+  --card: #252019;
+  --card-foreground: #e8e2d6;
+  --muted: #302a22;
+  --muted-foreground: #a09688;
+  --accent: #c4a35a;
+  --border: #3d3630;
+}
+
+@theme {
+  --font-sans: 'Noto Sans TC', sans-serif;
+  --font-serif: 'Noto Serif TC', serif;
+  --font-display: 'Cormorant Garamond', serif;
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-border: var(--border);
+  
+  --radius-sm: 0.125rem;
+  --radius-zen: 2px;
+
+  --animate-logo-breath: logo-breath 4s ease-in-out infinite;
+}
+
+@keyframes logo-breath {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+}
+
+@layer utilities {
+  /* 修正：純淨琥珀橘發光，紅濃明亮對標 v0yaov5 */
+  .bg-tea-amber {
+    background-color: #0f0d0a !important; /* 深化底色以增強發光對比 */
+    background-image: 
+      radial-gradient(circle at 50% 40%, rgba(180, 50, 20, 0.45) 0%, rgba(196, 130, 40, 0.2) 45%, rgba(15, 13, 10, 0) 85%),
+      linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%) !important;
+  }
+
+  /* 金屬文字 - v0yaov5 精確漸層 */
+  .text-metallic {
+    background: linear-gradient(135deg, #9a7d38 0%, #dcc88a 50%, #9a7d38 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 800;
+  }
+
+  .on-dark .text-metallic {
+    background: linear-gradient(135deg, #b89542 0%, #e5c87a 50%, #b89542 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* 金屬按鈕 */
+  .btn-metallic {
+    background: linear-gradient(180deg, #dcc88a 0%, #c4a35a 50%, #9a7d38 100%);
+    color: #1a1612 !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    @apply transition-all duration-300 font-black px-12 py-4 rounded-sm shadow-xl;
+  }
+  .btn-metallic:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+  }
+
+  .on-dark {
+    color: #e8e2d6;
+  }
+
+  .section-label {
+    @apply text-base font-black tracking-[0.3em] uppercase text-primary mb-6 block;
+  }
+
+  .noise-bg {
+    position: relative;
+  }
+  .noise-bg::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.04'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 1;
+  }
+}

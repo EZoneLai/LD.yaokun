@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#151310"/>
+  <!-- 磚茶 輪廓 -->
+  <rect x="90" y="90" width="220" height="130" rx="6" fill="#1E0D0A" stroke="#C5944E" stroke-width="2"/>
+  <rect x="105" y="105" width="190" height="100" rx="4" fill="none" stroke="#8B3E2F" stroke-width="1" stroke-dasharray="3 5" opacity="0.5"/>
+  <text x="200" y="275" fill="#C5944E" font-family="serif" font-size="16" text-anchor="middle" letter-spacing="3">2000年7581熟磚</text>
+  <text x="200" y="45" fill="#8B3E2F" font-family="sans-serif" font-size="12" text-anchor="middle" letter-spacing="4" font-weight="bold">普洱熟茶 · 磚茶</text>
+  <text x="200" y="162" fill="#C5944E" font-family="serif" font-size="26" text-anchor="middle" opacity="0.8" letter-spacing="4">7581</text>
+</svg>

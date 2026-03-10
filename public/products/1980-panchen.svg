@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#151310"/>
+  <!-- 心臟型/蘑菇形 緊茶輪廓 -->
+  <path d="M 200 70 C 110 70, 90 150, 150 180 C 180 200, 185 220, 185 240 L 215 240 C 215 220, 220 200, 250 180 C 310 150, 290 70, 200 70 Z" fill="#2A1B14" stroke="#8B3E2F" stroke-width="2"/>
+  <path d="M 200 70 C 110 70, 90 150, 150 180 C 180 200, 185 220, 185 240 L 215 240 C 215 220, 220 200, 250 180 C 310 150, 290 70, 200 70 Z" fill="none" stroke="#C5944E" stroke-width="1" stroke-dasharray="2 4" opacity="0.5"/>
+  <text x="200" y="275" fill="#C5944E" font-family="serif" font-size="16" text-anchor="middle" letter-spacing="3">1980年班禪景茶</text>
+  <text x="200" y="45" fill="#8B3E2F" font-family="sans-serif" font-size="12" text-anchor="middle" letter-spacing="4" font-weight="bold">普洱生茶 · 緊茶</text>
+  <text x="200" y="160" fill="#C5944E" font-family="serif" font-size="18" text-anchor="middle" opacity="0.8">寶焰牌</text>
+</svg>

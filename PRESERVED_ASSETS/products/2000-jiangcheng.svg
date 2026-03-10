@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#151310"/>
+  <!-- 圓茶/餅茶 輪廓 -->
+  <circle cx="200" cy="145" r="95" fill="#2A1B14" stroke="#8B3E2F" stroke-width="2"/>
+  <circle cx="200" cy="145" r="75" fill="none" stroke="#C5944E" stroke-width="1" stroke-dasharray="4 6" opacity="0.6"/>
+  <circle cx="200" cy="145" r="30" fill="none" stroke="#8B3E2F" stroke-width="1" opacity="0.3"/>
+  <text x="200" y="275" fill="#C5944E" font-family="serif" font-size="16" text-anchor="middle" letter-spacing="2">2000雲南江城圓茶春尖</text>
+  <text x="200" y="45" fill="#8B3E2F" font-family="sans-serif" font-size="12" text-anchor="middle" letter-spacing="4" font-weight="bold">普洱生茶 · 圓茶(餅)</text>
+  <text x="200" y="152" fill="#C5944E" font-family="serif" font-size="20" text-anchor="middle" opacity="0.8">春尖</text>
+</svg>
