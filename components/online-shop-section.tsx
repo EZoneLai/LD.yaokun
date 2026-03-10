@@ -64,13 +64,13 @@ export function OnlineShopSection() {
                 <h3 className="font-serif text-3xl text-foreground mb-4 font-bold">{product.name}</h3>
                 <div className="flex items-baseline gap-4 mb-2">
                   <p className="text-metallic text-3xl font-black">{product.price}</p>
-                  <p className="text-lg text-muted-foreground line-through italic">{product.originalPrice}</p>
+                  <p className="text-lg text-black/50 line-through italic">{product.originalPrice}</p>
                   <span className="ml-auto text-primary font-bold">{product.unit}</span>
                 </div>
                 <p className="text-lg text-black leading-relaxed mb-8 border-l-4 border-primary/20 pl-6">{product.description}</p>
                 <div className="space-y-4 mb-10">
                   {product.features.map((feature, i) => (
-                    <div key={i} className="flex items-center gap-3 text-foreground/80 font-bold">
+                    <div key={i} className="flex items-center gap-3 text-black font-bold">
                       <Check className="text-primary w-5 h-5" />
                       <span>{feature}</span>
                     </div>
