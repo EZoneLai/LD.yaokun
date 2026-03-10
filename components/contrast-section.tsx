@@ -40,9 +40,12 @@ export function ContrastSection() {
           transition={{ duration: 1.5 }}
           className="hidden lg:flex justify-center pt-[20vh]"
         >
-          <div className="w-[30rem] h-[30rem] rounded-full border-[4px] border-primary/30 flex items-center justify-center relative shadow-[0_0_60px_rgba(196,163,90,0.15)]">
+          <div className="w-[30rem] h-[30rem] rounded-full border-[6px] border-primary/40 flex items-center justify-center relative shadow-[0_0_100px_rgba(196,163,90,0.25)] overflow-hidden">
+            {/* 內向暈光層：模擬光線向內匯聚，照亮中心文字 */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_40%,rgba(196,163,90,0.15)_85%,rgba(196,163,90,0.3)_100%)]"></div>
+            
             <div className="absolute inset-14 rounded-full border-2 border-primary/20 animate-logo-breath"></div>
-            <div className="text-center font-serif text-4xl tracking-[0.8em] text-metallic leading-[2.2] translate-x-4 font-black">
+            <div className="text-center font-serif text-4xl tracking-[0.8em] text-metallic leading-[2.2] translate-x-4 font-black relative z-10 filter drop-shadow-[0_0_15px_rgba(255,255,255,0.4)]">
               心<br />寬<br />則<br />曜
             </div>
           </div>
