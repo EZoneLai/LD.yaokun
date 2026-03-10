@@ -21,27 +21,30 @@ export function BrandOriginSection() {
           <span className="section-label">Philosophy</span>
           
           <h2 className="font-serif text-4xl md:text-6xl font-normal leading-tight mb-12 tracking-tight text-white">
-            我不賣茶，<br />
-            我只是想讓你喝到 <span className="text-5xl md:text-7xl font-bold text-metallic ml-2 inline-block">真</span>
+           真誠的分享，<br />
+           只是想讓你喝到 <span className="text-5xl md:text-7xl font-bold text-metallic ml-2 inline-block">真</span>
           </h2>
-          
+
           <div className="w-24 h-1 bg-primary/30 mb-12"></div>
-          
+
           <div className="space-y-8 text-2xl text-secondary-foreground/80 font-serif font-bold leading-relaxed">
-            <p>
-              存了二十幾年的雲南老茶，台灣自然倉。後來發現，身邊有很多人需要乾淨、真實、且喝了身心舒暢的好茶。
-            </p>
-            <p>
-              於是有了曜寬.居——一個讓你好好喝一杯真實茶湯的地方。
-            </p>
+           <p>
+             存了二十幾年的雲南老茶，台灣自然倉。後來發現，身邊有很多人需要乾淨、真實、且喝了身心舒暢的好茶。
+           </p>
+           <p>
+             於是有了曜寬.居——一個讓你好好喝一杯真實茶湯的地方。
+           </p>
           </div>
 
           <div className="mt-16 border-l-8 border-primary/20 pl-10">
             <p className="font-serif italic text-3xl text-secondary-foreground leading-relaxed font-black opacity-90">
-              「我們不賣茶，只與你分享<br />經得起歲月沉澱，時間的味道。」
+              「把自己的喜好分享給你，<br />
+              在沖泡的過程中禪修，<br />
+              熬煮的等待中漸入安靜，<br />
+              品嚐經得起歲月沉澱，<br />
+              時間的味道。」
             </p>
-          </div>
-        </motion.div>
+          </div>        </motion.div>
 
         <div className="flex flex-col justify-center space-y-20 tabular-nums">
           {stats.map((stat, i) => (
